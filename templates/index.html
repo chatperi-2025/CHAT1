@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NLP ChatBot</title>
+</head>
+<body>
+    <h1>NLP ChatBot</h1>
+    <form method="POST">
+        <input type="text" name="message" placeholder="Say something..." required>
+        <input type="submit" value="Send">
+    </form>
+    
+    {% if user_input %}
+        <p><strong>You:</strong> {{ user_input }}</p>
+        <p><strong>ChatBot:</strong> {{ bot_response }}</p>
+    {% endif %}
+</body>
+</html>
